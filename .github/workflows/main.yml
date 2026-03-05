@@ -26,4 +26,4 @@ jobs:
           push: true
           tags: |
             ${{ secrets.DOCKER_REPO }}:latest
-            ${{ secrets.DOCKER_REPO }}:${{ env.SHORT_SHA }}
+            ${{ secrets.DOCKER_REPO }}:main-${{ env.SHORT_SHA }}
